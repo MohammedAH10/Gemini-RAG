@@ -2,6 +2,10 @@ import logging
 from enum import Enum
 from typing import Any, Dict, List, Optional
 
+from services.gemini_client import GeminiClient
+from services.chroma_service import ChromaService
+from services.search_services import SearchService
+
 from llama_index.core.llms import ChatMessage, MessageRole
 from llama_index.embeddings.gemini import GeminiEmbedding
 from llama_index.llms.gemini import Gemini
@@ -27,6 +31,12 @@ class RAGEngine:
     """Main RAG orchestration engine"""
 
     def __init__(self):
+
+        
+        self.gemini_client = GeminiClient()
+        self.chroma_service = ChromaService()
+        self.search_service = SearchService()
+        
         self.vector_store = VectorStore()
         self.document_processor = DocumentProcessor()
         self.web_retriever = WebRetriever()
