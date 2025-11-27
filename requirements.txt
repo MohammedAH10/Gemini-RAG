@@ -1,0 +1,11 @@
+flask
+python-dotenv
+google-generativeai
+chromadb
+llama-index
+llama-index-llms-gemini
+llama-index-embeddings-gemini
+beautifulsoup4
+requests
+pydantic
+pydantic-settings

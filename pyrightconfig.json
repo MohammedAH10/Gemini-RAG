@@ -1,0 +1,9 @@
+{
+  "venvPath": "/home/mohammedah10/miniconda3/envs",
+  "venv": "Gemini-RAG",
+  "executionEnvironments": [
+    {
+      "python": "/home/mohammedah10/miniconda3/envs/Gemini-RAG/bin/python3.12"
+    }
+  ]
+}
