@@ -1,0 +1,17 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting python-jose[cryptography]
+  Using cached python_jose-3.5.0-py2.py3-none-any.whl.metadata (5.5 kB)
+Collecting ecdsa!=0.15 (from python-jose[cryptography])
+  Using cached ecdsa-0.19.1-py2.py3-none-any.whl.metadata (29 kB)
+Requirement already satisfied: rsa!=4.1.1,!=4.4,<5.0,>=4.0 in /usr/lib/python3.14/site-packages (from python-jose[cryptography]) (4.9)
+Requirement already satisfied: pyasn1>=0.5.0 in /usr/lib/python3.14/site-packages (from python-jose[cryptography]) (0.6.1)
+Requirement already satisfied: cryptography>=3.4.0 in /usr/lib64/python3.14/site-packages (from python-jose[cryptography]) (45.0.4)
+Requirement already satisfied: cffi>=1.14 in /usr/lib64/python3.14/site-packages (from cryptography>=3.4.0->python-jose[cryptography]) (2.0.0)
+Requirement already satisfied: pycparser in /usr/lib/python3.14/site-packages (from cffi>=1.14->cryptography>=3.4.0->python-jose[cryptography]) (2.22)
+Requirement already satisfied: six>=1.9.0 in /usr/lib/python3.14/site-packages (from ecdsa!=0.15->python-jose[cryptography]) (1.17.0)
+Requirement already satisfied: ply==3.11 in /usr/lib/python3.14/site-packages (from pycparser->cffi>=1.14->cryptography>=3.4.0->python-jose[cryptography]) (3.11)
+Using cached python_jose-3.5.0-py2.py3-none-any.whl (34 kB)
+Using cached ecdsa-0.19.1-py2.py3-none-any.whl (150 kB)
+Installing collected packages: ecdsa, python-jose
+
+Successfully installed ecdsa-0.19.1 python-jose-3.5.0

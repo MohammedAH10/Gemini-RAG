@@ -1,0 +1,10 @@
+{
+  "include": ["app", "tests", "run.py"],
+  "exclude": ["**/__pycache__", ".pytest_cache", "data"],
+  "typeCheckingMode": "off",
+  "reportMissingTypeStubs": "none",
+  "reportAny": "none",
+  "reportExplicitAny": "none",
+  "reportCallIssue": "none",
+  "reportMissingTypeStubs": "none",
+}

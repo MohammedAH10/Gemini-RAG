@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(pip install *)",
+      "Bash(python *)",
+      "Bash(npm run *)",
+      "Bash(sleep *)",
+      "Bash(curl *)",
+      "Bash(python3 *)",
+      "Bash(pkill *)",
+      "Bash(timeout *)",
+      "Bash(true)",
+      "Bash(nohup *)",
+      "Bash(dig *)",
+      "Bash(nslookup *)"
+    ]
+  },
+  "$version": 3
+}

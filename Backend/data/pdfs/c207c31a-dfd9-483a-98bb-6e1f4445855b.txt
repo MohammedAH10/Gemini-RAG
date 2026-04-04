@@ -1,0 +1,7 @@
+Machine learning is a subset of artificial intelligence that enables computers to learn from data.
+
+Deep learning uses neural networks with multiple layers to process complex patterns. It has revolutionized computer vision, natural language processing, and speech recognition.
+
+Natural language processing (NLP) allows computers to understand and generate human language. Modern NLP uses transformer models like BERT and GPT.
+
+Computer vision enables machines to interpret visual information. Applications include object detection, facial recognition, and autonomous vehicles.

@@ -1,0 +1,5 @@
+This is a test document with multiple paragraphs.
+
+The second paragraph has more content to test chunking.
+
+The third paragraph ensures we have enough text to create multiple chunks if needed.

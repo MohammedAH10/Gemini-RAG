@@ -1,0 +1,1 @@
+Machine learning is a subset of artificial intelligence that enables computers to learn from data without explicit programming. It uses algorithms to identify patterns and make decisions. Deep learning is a specialized form of machine learning that uses neural networks with multiple layers. Neural networks are inspired by the human brain and can process complex patterns in data.

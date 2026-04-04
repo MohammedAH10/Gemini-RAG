@@ -1,0 +1,7 @@
+Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience.
+Deep learning uses neural networks with many layers.
+Reinforcement learning trains agents via rewards.
+Natural language processing enables computers to understand text.
+Computer vision allows machines to interpret images.
+
+main.py schemas.py query.py rag_engine.py
