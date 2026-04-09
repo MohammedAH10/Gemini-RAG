@@ -1,0 +1,11 @@
+Backend/.env
+Backend/app/data/
+Backend/StartUp PDF RAG Supabase.txt
+Backend/.qwen
+
+Frontend/node_modules
+Frontend/dist
+Frontend/.env
+Frontend/.env.local
+Frontend/.qwen
+
