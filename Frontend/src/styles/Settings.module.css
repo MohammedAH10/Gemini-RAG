@@ -1,0 +1,128 @@
+.settingsPage {
+  max-width: 900px;
+}
+
+.settingsHeader {
+  margin-bottom: var(--space-xl);
+}
+
+.settingsHeader h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.settingsHeader p {
+  color: var(--text-secondary);
+}
+
+.settingsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+.settingsCard {
+  padding: var(--space-xl);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(12px);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.cardIcon {
+  font-size: 1.5rem;
+  color: var(--blue-electric);
+}
+
+.cardHeader h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.settingItem {
+  margin-bottom: var(--space-lg);
+}
+
+.settingItem label {
+  display: block;
+  margin-bottom: var(--space-sm);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.settingItem input[type='range'] {
+  width: 100%;
+  appearance: none;
+  height: 6px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-full);
+  outline: none;
+  margin-bottom: var(--space-sm);
+}
+
+.settingItem input[type='range']::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  cursor: pointer;
+  box-shadow: var(--shadow-glow);
+}
+
+.settingItem input[type='number'] {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.settingItem input[type='number']:focus {
+  outline: none;
+  border-color: var(--blue-electric);
+}
+
+.settingValue {
+  display: block;
+  text-align: right;
+  color: var(--blue-electric);
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.saveBtn {
+  padding: var(--space-md) var(--space-xl);
+  background: var(--gradient-primary);
+  color: white;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-glow);
+}
+
+.saveBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(79, 172, 254, 0.4);
+}
+
+.saveBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

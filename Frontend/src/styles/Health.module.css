@@ -1,0 +1,106 @@
+.healthPage {
+  max-width: 900px;
+}
+
+.healthHeader {
+  margin-bottom: var(--space-xl);
+}
+
+.healthHeader h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.healthHeader p {
+  color: var(--text-secondary);
+}
+
+.loadingState {
+  text-align: center;
+  padding: var(--space-2xl);
+  color: var(--text-secondary);
+}
+
+.spin {
+  animation: spin 0.8s linear infinite;
+  font-size: 2rem;
+  color: var(--blue-electric);
+  margin-bottom: var(--space-md);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.overallStatus {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-xl);
+  background: var(--bg-card);
+  border: 1px solid rgba(79, 172, 254, 0.3);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.statusIcon {
+  font-size: 1.5rem;
+  color: var(--blue-electric);
+}
+
+.overallStatus h2 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+
+.componentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+}
+
+.componentCard {
+  padding: var(--space-xl);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(12px);
+}
+
+.componentHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.componentIcon {
+  font-size: 1.5rem;
+  color: var(--blue-electric);
+}
+
+.componentHeader h3 {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.statusHealthy {
+  background: rgba(79, 172, 254, 0.1);
+  color: var(--blue-electric);
+  border: 1px solid rgba(79, 172, 254, 0.3);
+}
+
+.statusUnhealthy {
+  background: rgba(244, 114, 182, 0.1);
+  color: var(--pink-glow);
+  border: 1px solid rgba(244, 114, 182, 0.3);
+}

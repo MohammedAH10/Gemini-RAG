@@ -1,0 +1,125 @@
+.viewerPage {
+  max-width: 1000px;
+}
+
+.viewerHeader {
+  margin-bottom: var(--space-xl);
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--blue-electric);
+  font-weight: 500;
+  margin-bottom: var(--space-lg);
+  transition: color var(--transition-fast);
+}
+
+.backBtn:hover {
+  color: var(--blue-glow);
+}
+
+.titleActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleActions h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.actionBtns {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  transition: all var(--transition-base);
+}
+
+.actionBtn:hover {
+  border-color: var(--border-glow);
+  background: rgba(79, 172, 254, 0.08);
+}
+
+.deleteBtn:hover {
+  border-color: var(--pink-glow);
+  color: var(--pink-glow);
+  background: rgba(244, 114, 182, 0.08);
+}
+
+.viewerGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-xl);
+}
+
+.infoCard,
+.previewCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  backdrop-filter: blur(12px);
+}
+
+.infoCard h3,
+.previewCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-lg);
+  color: var(--text-primary);
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.infoRow:last-child {
+  border-bottom: none;
+}
+
+.infoRow svg {
+  color: var(--blue-electric);
+}
+
+.infoRow strong {
+  margin-left: auto;
+  color: var(--text-primary);
+}
+
+.chunksPlaceholder {
+  padding: var(--space-xl);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.loading {
+  text-align: center;
+  padding: var(--space-2xl);
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .viewerGrid {
+    grid-template-columns: 1fr;
+  }
+}

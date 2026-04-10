@@ -1,0 +1,126 @@
+.vsPage {
+  max-width: 1000px;
+}
+
+.vsHeader {
+  margin-bottom: var(--space-xl);
+}
+
+.vsHeader h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.vsHeader p {
+  color: var(--text-secondary);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.statCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(12px);
+}
+
+.statIcon {
+  font-size: 2rem;
+  color: var(--blue-electric);
+}
+
+.statInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.statValue {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.docsSection h2 {
+  font-size: 1.3rem;
+  margin-bottom: var(--space-lg);
+  color: var(--text-primary);
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--space-2xl);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  color: var(--text-secondary);
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  color: var(--purple-deep);
+  opacity: 0.4;
+  margin-bottom: var(--space-md);
+}
+
+.docsTable {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.docsTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.docsTable th {
+  padding: var(--space-md) var(--space-lg);
+  text-align: left;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.docsTable td {
+  padding: var(--space-md) var(--space-lg);
+  color: var(--text-primary);
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.95rem;
+}
+
+.tableActionBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  margin-right: var(--space-sm);
+  transition: all var(--transition-fast);
+}
+
+.tableActionBtn:hover {
+  color: var(--blue-electric);
+  background: rgba(79, 172, 254, 0.1);
+}
